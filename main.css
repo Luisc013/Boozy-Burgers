@@ -71,7 +71,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: .7;
+    opacity: .5;
 }
 
 .overlay {
@@ -80,7 +80,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgb(247, 202, 202);
+    background: rgb(245, 221, 221);
     mix-blend-mode: overlay;
 }
 
@@ -90,26 +90,30 @@
 }
 
 .text h2 {
-    font-size: 5.7em;
+    font-size: 5.9em;
     font-weight: 500;
     letter-spacing: 2px;
     line-height: 1em;
     text-transform: uppercase;
+    color: rgb(255, 255, 255);
 }
 
 .text h3 {
-    font-size: 2.2em;
-    font-weight: 300;
+    font-size: 2.5em;
+    font-weight: 700;
     letter-spacing: 2px;
     line-height: 1em;
     text-transform: uppercase;
+    margin-top: 10px;
+    color: rgb(212, 0, 42);
 }
 
 .text p {
-    font-size: 1.1em;
+    font-size: 1.09em;
     margin: 20px 0;
-    font-weight: 200;
+    font-weight: 500;
     max-width: 660px;
+    text-transform: uppercase;
 }
 
 .text a {
@@ -127,6 +131,7 @@
 
 .text a:hover {
     letter-spacing: 6px;
+    color: rgb(212, 0, 42);
 }
 
 .social {
@@ -164,7 +169,7 @@
 }
 
 .social-buttons {
-    height: 30px;
+    height: 37px;
 }
 
 .logo {
