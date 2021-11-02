@@ -19,6 +19,11 @@
     background-color: black;
     color: white;
     z-index: 2;
+    transition: 0.3s;
+}
+
+.showcase.active {
+    right: 300px;
 }
 
 .showcase header {
@@ -40,17 +45,18 @@
 
 .toggle {
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: 90px;
+    height: 90px;
     background: url('images/menu.png');
-    background-size: 30px;
+    background-repeat: no-repeat;
+    background-size: 60px;
     background-position: center;
     cursor: pointer;
 }
 
 .toggle.active {
     background: url('images/close.png');
-    background-size: 30px;
+    background-size: 60px;
     background-position: center;
 }
 
@@ -138,15 +144,65 @@
 
 .social li a {
     display: inline-block;
-    filter: invert(1);
-    margin-right: 18px;
+    margin-right: 23px;
+}
+
+.social li a:hover {
+  transform: translateY(-15px);
+  transition: 0.2s;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-buttons {
-    height: 40px;
+    height: 30px;
 }
 
 .logo {
     font-size: 3.5em;
     letter-spacing: 3px;
+}
+
+.menu ul {
+  position: relative;
+}
+.menu ul li {
+  list-style: none;
+}
+.menu ul li a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #111;
+}
+.menu ul li a:hover
+{
+  color: #d60a0a; 
+  text-decoration: none;
+  font-size: #d60a0a;
+}
+
+@media (max-width: 991px)
+{
+  .showcase,
+  .showcase header
+  {
+    padding: 40px;
+  }
+  .text h2
+  {
+    font-size: 3em;
+  }
+  .text h3
+  {
+    font-size: 2em;
+  }
 }
