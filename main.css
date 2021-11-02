@@ -84,15 +84,15 @@
 }
 
 .text h2 {
-    font-size: 5em;
+    font-size: 5.7em;
     font-weight: 500;
     letter-spacing: 2px;
     line-height: 1em;
     text-transform: uppercase;
 }
 
-.text h2 {
-    font-size: 4em;
+.text h3 {
+    font-size: 2.2em;
     font-weight: 300;
     letter-spacing: 2px;
     line-height: 1em;
@@ -116,8 +116,37 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .text a:hover {
     letter-spacing: 6px;
+}
+
+.social {
+    position: absolute;
+    bottom: 20px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social li {
+    list-style: none;
+}
+
+.social li a {
+    display: inline-block;
+    filter: invert(1);
+    margin-right: 18px;
+}
+
+.social-buttons {
+    height: 40px;
+}
+
+.logo {
+    font-size: 3.5em;
+    letter-spacing: 3px;
 }
