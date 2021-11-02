@@ -182,6 +182,7 @@
 }
 .menu ul li {
   list-style: none;
+  margin-top: 10px;
 }
 .menu ul li a {
   text-decoration: none;
